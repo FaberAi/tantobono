@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --crema: #f5efe4;
+  --crema-deep: #ede4d2;
+  --inchiostro: #1a1a1a;
+  --inchiostro-soft: #2a2a2a;
+  --terracotta: #c1603a;
+  --terracotta-deep: #a14e2d;
+  --line: rgba(26, 26, 26, 0.12);
+  --line-soft: rgba(26, 26, 26, 0.06);
+}
+
+@theme inline {
+  --color-crema: var(--crema);
+  --color-crema-deep: var(--crema-deep);
+  --color-inchiostro: var(--inchiostro);
+  --color-inchiostro-soft: var(--inchiostro-soft);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-deep: var(--terracotta-deep);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+html,
+body {
+  background-color: var(--crema);
+  color: var(--inchiostro);
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--terracotta);
+  color: var(--crema);
+}
+
+.font-display {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  line-height: 0.92;
+}
+
+.font-quote {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.rule {
+  height: 1px;
+  background: var(--line);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 800ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.fade-up-delay-1 {
+  animation: fade-up 800ms cubic-bezier(0.2, 0.7, 0.2, 1) 200ms both;
+}
+
+.fade-up-delay-2 {
+  animation: fade-up 800ms cubic-bezier(0.2, 0.7, 0.2, 1) 400ms both;
+}
+
+@keyframes ticker {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.ticker {
+  animation: ticker 32s linear infinite;
+}
+
+@keyframes ticker-up {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+@keyframes ticker-down {
+  from {
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ticker-up {
+  animation: ticker-up 60s linear infinite;
+}
+
+.ticker-down {
+  animation: ticker-down 60s linear infinite;
+}
+
+.ticker-pause:hover .ticker-up,
+.ticker-pause:hover .ticker-down {
+  animation-play-state: paused;
+}
