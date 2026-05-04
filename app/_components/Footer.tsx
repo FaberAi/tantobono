@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-crema-deep py-16 border-t border-line">
@@ -52,9 +54,23 @@ export default function Footer() {
             © {new Date().getFullYear()} Tanto Bono · un brand di Trade
             Consulting Italia s.r.l.s.
           </p>
-          <p className="font-quote italic">
-            «È tanto bono.» — Mario, Macerata 1919
-          </p>
+          <div className="flex items-center gap-5">
+            <Link
+              href="/privacy"
+              className="hover:text-terracotta transition-colors"
+            >
+              Privacy
+            </Link>
+            <Link
+              href="/cookie"
+              className="hover:text-terracotta transition-colors"
+            >
+              Cookie
+            </Link>
+            <p className="font-quote italic">
+              «È tanto bono.» — Mario, Macerata 1919
+            </p>
+          </div>
         </div>
       </div>
     </footer>
