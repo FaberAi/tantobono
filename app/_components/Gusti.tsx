@@ -96,14 +96,9 @@ function Colonna({
 
   return (
     <div className="relative">
-      <div className="flex items-baseline justify-between mb-5">
-        <p className="font-display text-2xl md:text-3xl tracking-[-0.03em] text-terracotta">
-          {titolo}
-        </p>
-        <p className="label text-[10px] text-inchiostro/40">
-          {voci.length} gusti
-        </p>
-      </div>
+      <p className="font-display text-2xl md:text-3xl tracking-[-0.03em] text-terracotta mb-5">
+        {titolo}
+      </p>
 
       <div
         className="relative overflow-hidden"
@@ -150,13 +145,6 @@ export default function Gusti() {
   return (
     <section id="gusti" className="py-24 md:py-36">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-baseline justify-between mb-12">
-          <p className="label text-inchiostro/60">04 — La Carta</p>
-          <p className="label text-terracotta hidden md:block">
-            ruota con le stagioni
-          </p>
-        </div>
-
         <h2 className="font-display text-4xl md:text-6xl mb-6 leading-[0.95] max-w-3xl">
           Tanti gusti.
           <br />

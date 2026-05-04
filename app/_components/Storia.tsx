@@ -4,8 +4,6 @@ export default function Storia() {
   return (
     <section id="storia" className="bg-crema-deep py-24 md:py-36">
       <div className="max-w-6xl mx-auto px-6">
-        <p className="label text-inchiostro/60 mb-12">02 — La Nostra Storia</p>
-
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div className="relative">
             <div className="aspect-[4/5] relative overflow-hidden shadow-[0_30px_80px_-30px_rgba(0,0,0,0.35)]">

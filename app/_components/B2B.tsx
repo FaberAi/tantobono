@@ -14,8 +14,6 @@ export default function B2B() {
       />
 
       <div className="max-w-6xl mx-auto px-6 relative">
-        <p className="label text-crema/50 mb-8">Per il tuo locale</p>
-
         <h2 className="font-display text-4xl md:text-7xl mb-10 leading-[0.95] max-w-4xl">
           Bar, ristoranti,
           <br />

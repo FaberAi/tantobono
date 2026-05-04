@@ -5,26 +5,19 @@ export default function Hero() {
       className="relative pt-16 md:pt-28 pb-20 md:pb-32 overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-6">
-        <p className="label text-inchiostro/60 mb-8 fade-up">
-          Edizione 01 · 2026 · Gelato artigianale
-        </p>
-
         <h1 className="font-display text-[22vw] md:text-[200px] leading-[0.85] fade-up">
           <span className="block">TANTO</span>
           <span className="block text-terracotta">BONO</span>
         </h1>
 
         <div className="mt-10 md:mt-14 flex flex-col md:flex-row md:items-end md:justify-between gap-8 fade-up-delay-1">
-          <div className="max-w-md">
-            <p className="label text-inchiostro/60 mb-3">Tagline</p>
-            <p className="text-2xl md:text-3xl font-medium tracking-tight leading-tight">
-              Gelato — fatto bene.
-            </p>
-          </div>
-          <div className="max-w-sm text-[15px] leading-relaxed text-inchiostro-soft">
+          <p className="text-2xl md:text-3xl font-medium tracking-tight leading-tight max-w-md">
+            Gelato — fatto bene.
+          </p>
+          <p className="max-w-sm text-[15px] leading-relaxed text-inchiostro-soft">
             Latte vero. Frutta di stagione. Niente coloranti, niente aromi
             finti, niente promesse complicate. Solo gelato fatto come si deve.
-          </div>
+          </p>
         </div>
       </div>
 

@@ -2,8 +2,6 @@ export default function Manifesto() {
   return (
     <section id="manifesto" className="py-24 md:py-36">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <p className="label text-inchiostro/60 mb-16">03 — Il Manifesto</p>
-
         <p className="font-quote text-[clamp(64px,12vw,160px)] text-terracotta leading-[0.88] mb-16">
           «È tanto bono.»
         </p>
