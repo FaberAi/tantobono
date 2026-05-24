@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { useMemo } from "react";
 
 export default function Footer() {
+  const currentYear = useMemo(() => new Date().getFullYear(), []);
   return (
     <footer className="bg-crema-deep py-16 border-t border-line">
       <div className="max-w-6xl mx-auto px-6">
@@ -51,10 +53,9 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-line flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-[12px] text-inchiostro/55">
           <p>
-            © {new Date().getFullYear()} Tanto Bono · un brand di Trade
+            © {currentYear} Tanto Bono · un brand di Trade
             Consulting Italia s.r.l.s.
-          </p>
-          <div className="flex items-center gap-5">
+          </p>          <div className="flex items-center gap-5">
             <Link
               href="/privacy"
               className="hover:text-terracotta transition-colors"
